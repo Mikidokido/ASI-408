@@ -35,3 +35,17 @@ Enable GitHub Pages using **Settings → Pages → Deploy from a branch → main
 ## Adding the robot wireframe
 
 The `interim-report/progress.html#robot-wireframe` section is a **placeholder**, not a rendered CAD model. Provide a lightweight complete robot assembly named `ASI-408-heavy-robot.glb` (glTF binary, preferably under 20 MB). This format supports a 3D viewer with optional wireframe mode. Alternative source formats are STEP (`.step` or `.stp`) or STL (`.stl`); they need conversion to browser-friendly glTF/GLB. For native SolidWorks CAD, upload `.SLDASM` with all referenced `.SLDPRT` components. Do not publish restricted team CAD without permission.
+
+## Homepage 3D viewer and author photo
+
+The homepage hero **automatically switches to an interactive 3D model** when you add `assets/models/ASI-408-heavy-robot.glb`. Until then, it intentionally shows your existing actual CAD image instead of an invented model.
+
+The student profile **automatically switches to your portrait** when you add `assets/profile/cheng-yi.jpg`. Until then, a labelled placeholder is displayed. Name, department, year, supervisor, project code and team are already shown.
+
+## Hero projectile analysis (Appendix D)
+
+`assets/data/RMUL_2026_Hero_Performance_Summary.xlsx` contains the verified aggregate figures and two kinds of editable Excel charts. **It is not the original 435-row workbook.** Upload `联盟赛分析.xlsx` to have the full capacity-coverage curve recreated and to preserve the original detailed dataset.
+
+## Editing locally
+
+Clone `https://github.com/Mikidokido/ASI-408.git`, open the folder in Visual Studio Code, edit `index.html`, `styles.css`, or `interim-report/*.html`, preview with Live Server, then commit and push to `main`. GitHub Pages will rebuild automatically.
