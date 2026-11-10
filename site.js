@@ -24,5 +24,23 @@
     }, {rootMargin: '-12% 0px -74% 0px', threshold: 0});
     tocLinks.forEach(a => {const target=document.getElementById(decodeURIComponent(a.hash.slice(1)));if(target)observer.observe(target);});
   }
+  // Load an external Bilibili player only after a visitor chooses to play.
+  // The direct source link in each caption remains available if embedding is blocked.
+  document.querySelectorAll('.video-launch[data-bvid]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const id = button.dataset.bvid;
+      if (!/^BV[A-Za-z0-9]{10}$/.test(id)) return;
+      const frame = button.closest('.video-frame');
+      if (!frame) return;
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://player.bilibili.com/player.html?bvid=${encodeURIComponent(id)}&autoplay=0&high_quality=1`;
+      iframe.loading = 'lazy';
+      iframe.title = button.getAttribute('aria-label') || 'Bilibili demonstration video';
+      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+      iframe.allow = 'autoplay; fullscreen; picture-in-picture';
+      iframe.allowFullscreen = true;
+      frame.replaceChildren(iframe);
+    });
+  });
   // Native image links open the original report figure; no external libraries required.
 })();

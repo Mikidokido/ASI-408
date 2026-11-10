@@ -1,5 +1,36 @@
 {
-  "source": "CDE4301_Interim_Report_Revised.docx",
-  "figures": 44,
-  "status": "GitHub Pages ready"
+  "source": "CDE4301 Interim Presentation.pdf and CDE4301_Interim_Report_Revised.docx",
+  "project_code": "ASI-408",
+  "course": "CDE4301",
+  "videos": [
+    {
+      "slide": 12,
+      "video_id": "BV1m5AgzeERu"
+    },
+    {
+      "slide": 28,
+      "video_id": "BV1tvZ1YfEoY"
+    },
+    {
+      "slide": 28,
+      "video_id": "BV1xVP5zyE34"
+    },
+    {
+      "slide": 29,
+      "video_id": "BV1FJxY6fEEY"
+    },
+    {
+      "slide": 29,
+      "video_id": "BV1B5411D773"
+    }
+  ],
+  "site_pages": [
+    "index.html",
+    "interim-report/index.html",
+    "interim-report/design.html",
+    "interim-report/progress.html",
+    "interim-report/appendices.html"
+  ],
+  "report_figures": 44,
+  "video_player": "Bilibili third-party lazy embed with source-link fallback"
 }

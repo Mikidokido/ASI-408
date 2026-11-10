@@ -1,49 +1,24 @@
-# CDE4301 — RoboMaster Heavy Robot interim documentation
+# ASI-408 — Development of the RoboMaster Heavy Robot
 
-This is the website package for **ASI-408: Development of the RoboMaster Heavy Robot** (AY2026/27). It follows the earlier two-level site structure (`index.html` and `interim-report/`) and the EDIC GitHub tutorial's recommendations on multi-page documentation, contents/navigation, figures, tables, and references.
+NUS CDE4301 Innovation & Design Capstone (AY2026/27). This repository contains the static project website and interim report, based on the existing report rather than newly invented testing results.
 
-## Files to update
+## Project code and repository rename
 
-- `index.html` — project overview (new responsive hero and requirement cards)
-- `styles.css` and `site.js` — shared styling and navigation
-- `interim-report/index.html` — acknowledgements, introduction, competition context and robot specs
-- `interim-report/design.html` — design thinking and decision matrices
-- `interim-report/progress.html` — Semester 1 engineering work and future plan
-- `interim-report/appendices.html` — references and detailed appendices
-- `assets/report-figures/` — images extracted from the report document, preserving the embedded figures
+The repository should be named **ASI-408** in accordance with the EDIC tutorial. If it is still named `CDE4301`, the repository owner should open **Settings → General → Repository name**, type `ASI-408`, then select **Rename**. The public site should then use `https://mikidokido.github.io/ASI-408/` after GitHub Pages updates. The site itself uses relative links so it works before and after the rename.
 
-## Publishing to existing repository
+## Video evidence
 
-Target repository previously used for the project: https://github.com/Mikidokido/CDE4301
+Five video links cited in the original interim presentation are embedded in the relevant sections: competition footage (slide 12), two step-climbing examples (slide 28), and two overturning/recovery demonstrations (slide 29). Video clips are hosted by Bilibili, not by this repository. Click a screenshot to load the third-party player; if playback is unavailable, follow the Bilibili source link directly below each player.
 
-1. Download and unzip the package.
-2. **Keep any existing repository-specific files** you want to preserve. Copy these files and directories into the repository root; overwrite matching website files.
-3. In VS Code, preview locally with the Live Server extension, as described in the EDIC tutorial.
-4. Check that GitHub Pages is enabled in Settings → Pages, **Deploy from a branch**, `main`, `/(root)`.
-5. Commit and push in the repository directory:
+## Structure
 
-   ```bash
-   git add .
-   git commit -m "Update CDE4301 interim report website"
-   git push origin main
-   ```
+- `index.html`: landing page and project introduction
+- `interim-report/index.html`: competition context, requirements and historical projectile use
+- `interim-report/design.html`: subsystem selection and embedded step/recovery video examples
+- `interim-report/progress.html`: Semester 1 design and preliminary analyses
+- `interim-report/appendices.html`: references, appendix calculations and presentation video sources
+- `assets/report-figures/`: illustrations extracted from the report
+- `assets/video-posters/`: five still frames from the supplied presentation PDF
+- `styles.css`, `site.js`: responsive styling and lazy-load video playback
 
-GitHub Pages should then serve the site from the repository's project URL. This package is **not automatically pushed** to GitHub.
-
-## Content status
-
-- Generated from `CDE4301_Interim_Report_Revised.docx`, including report sections, figures, tables, references and appendices.
-- Original explanatory text and numerical assumptions have been preserved. No unrecorded physical tests were fabricated.
-- The chassis geometry, material choices, docking evaluation, and FEA are described as preliminary where they have not been physically validated.
-- Source citations remain in IEEE style as supplied in the report.
-
-## EDIC resources
-
-- Template: https://edic-nus.github.io/template/
-- Tutorial: https://edic-nus.github.io/tutorial/ (supplied as PDF)
-
-The site uses plain HTML, CSS and JavaScript. It does not require a build step, server, or third-party JS framework.
-
-## GitHub Pages
-
-Deploy from the `main` branch root (Settings → Pages). All report figures are stored as compressed `.webp` files under `assets/report-figures/`; no build step is required.
+Enable GitHub Pages using **Settings → Pages → Deploy from a branch → main / (root)**. No build tools are required. Videos require an internet connection and are subject to Bilibili's availability and embedding restrictions.
