@@ -1,69 +1,49 @@
-# CDE4301 — RoboMaster Robotics Design Capstone
+# CDE4301 — RoboMaster Heavy Robot interim documentation
 
-**National University of Singapore · College of Design and Engineering · AY2026/27**
+This is the website package for **ASI-408: Development of the RoboMaster Heavy Robot** (AY2026/27). It follows the earlier two-level site structure (`index.html` and `interim-report/`) and the EDIC GitHub tutorial's recommendations on multi-page documentation, contents/navigation, figures, tables, and references.
 
-This repository hosts the project website and engineering documentation for a CDE4301 capstone exploring the design and development of a RoboMaster robotic platform. The focus is on translating competition and operational requirements into justified mechanical design decisions, evaluating alternative concepts, and documenting the design and verification process.
+## Files to update
 
-**Project links**
+- `index.html` — project overview (new responsive hero and requirement cards)
+- `styles.css` and `site.js` — shared styling and navigation
+- `interim-report/index.html` — acknowledgements, introduction, competition context and robot specs
+- `interim-report/design.html` — design thinking and decision matrices
+- `interim-report/progress.html` — Semester 1 engineering work and future plan
+- `interim-report/appendices.html` — references and detailed appendices
+- `assets/report-figures/` — images extracted from the report document, preserving the embedded figures
 
-- **[Project website](https://mikidokido.github.io/CDE4301/)** — project overview, engineering approach and workstreams
-- **[Interim design report](https://mikidokido.github.io/CDE4301/interim-report/)** — detailed design documentation, evidence and references
-- **[GitHub repository](https://github.com/Mikidokido/CDE4301)** — website source and version history
+## Publishing to existing repository
 
-*Note: The website links become available when GitHub Pages is enabled and deployment has completed.*
+Target repository previously used for the project: https://github.com/Mikidokido/CDE4301
 
-## Project overview
+1. Download and unzip the package.
+2. **Keep any existing repository-specific files** you want to preserve. Copy these files and directories into the repository root; overwrite matching website files.
+3. In VS Code, preview locally with the Live Server extension, as described in the EDIC tutorial.
+4. Check that GitHub Pages is enabled in Settings → Pages, **Deploy from a branch**, `main`, `/(root)`.
+5. Commit and push in the repository directory:
 
-The project uses RoboMaster as a competition-driven engineering design context. Potential areas of investigation include robot locomotion and chassis configuration, mechanisms for task execution, and the integration of mechanical subsystems under constraints such as mass, size, power, safety and reliability.
+   ```bash
+   git add .
+   git commit -m "Update CDE4301 interim report website"
+   git push origin main
+   ```
 
-The precise subsystem scope, specifications and conclusions are documented in the **interim design report**. Descriptions in the website template are illustrative until replaced with project-specific evidence; they should not be interpreted as completed prototypes or validated results.
+GitHub Pages should then serve the site from the repository's project URL. This package is **not automatically pushed** to GitHub.
 
-## Engineering workflow
+## Content status
 
-1. **Define** — establish the problem, review relevant rules and research, and derive measurable design requirements.
-2. **Explore and compare** — generate alternative engineering concepts and evaluate them against explicit criteria.
-3. **Develop** — refine selected concepts through CAD, calculations, component selection and manufacturing plans.
-4. **Prototype and test** — perform targeted fabrication and experiments as appropriate to the project stage.
-5. **Evaluate and iterate** — analyse evidence, identify limitations and plan subsequent design improvements.
+- Generated from `CDE4301_Interim_Report_Revised.docx`, including report sections, figures, tables, references and appendices.
+- Original explanatory text and numerical assumptions have been preserved. No unrecorded physical tests were fabricated.
+- The chassis geometry, material choices, docking evaluation, and FEA are described as preliminary where they have not been physically validated.
+- Source citations remain in IEEE style as supplied in the report.
 
-## Documentation
+## EDIC resources
 
-The interim report is organised around the key engineering-assessment areas in the CDE4301 rubric:
+- Template: https://edic-nus.github.io/template/
+- Tutorial: https://edic-nus.github.io/tutorial/ (supplied as PDF)
 
-| Rubric area | Documentation focus |
-| --- | --- |
-| **A1** | Objectives, scope, context and design requirements |
-| **A2** | Concept development and justification of design choices |
-| **A3** | Fabrication, prototyping and engineering implementation |
-| **A4** | Experimental design and testing |
-| **A5** | Analysis and interpretation of results |
-| **A6** | Identified issues, engineering response and project plan |
+The site uses plain HTML, CSS and JavaScript. It does not require a build step, server, or third-party JS framework.
 
-See the [interim report](https://mikidokido.github.io/CDE4301/interim-report/) for technical detail. This README is an overview, not a substitute for the assessed report.
+## GitHub Pages
 
-## Repository structure
-
-```text
-CDE4301/
-├── index.html               # Project homepage
-├── styles.css               # Homepage styles
-├── interim-report/
-│   └── index.html           # Detailed interim report
-├── assets/
-│   └── README.md            # Notes for approved figures and media
-└── README.md                # This file
-```
-
-## Viewing and updating the site
-
-To preview the site locally, open `index.html` in a web browser. Edit the HTML files in VS Code and place approved images or other static assets under `assets/`.
-
-To publish through GitHub Pages, go to **Settings → Pages**, set **Source** to **Deploy from a branch**, then choose branch **`main`** and folder **`/(root)`**. Updates pushed to `main` will be redeployed automatically.
-
-**Before submission:** replace all placeholder text with actual project work; verify figure credits, citations, calculations and references; and ensure that the individual contribution and experimental evidence are clearly identified.
-
-## Attribution and confidentiality
-
-The website layout and content structure are authored for this CDE4301 project, with general inspiration from academic engineering project showcases. External competition manuals, research, images and third-party resources should be appropriately cited in the technical report.
-
-Do **not** upload unpublished team CAD, confidential designs, proprietary code or restricted materials without authorisation. GitHub Pages for a public repository makes its published content accessible to anyone.
+Deploy from the `main` branch root (Settings → Pages). All report figures are stored as compressed `.webp` files under `assets/report-figures/`; no build step is required.
