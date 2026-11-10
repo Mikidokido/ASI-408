@@ -32,3 +32,18 @@
 .video-source-notes{background:#f5f9fc;border-radius:11px;padding:23px;margin:22px 0 35px;border:1px solid #dbe8f1}
 .video-source-notes h3{font-size:20px;color:#193c5a}.video-reference-list{font-size:12px;color:#425f74;padding-left:20px;line-height:1.75}.video-reference-list li{margin-bottom:7px;overflow-wrap:anywhere}
 @media(max-width:760px){.video-evidence{padding:17px 13px}.video-grid,.video-evidence-solo .video-grid{grid-template-columns:1fr}.video-evidence h4{font-size:19px}}
+
+/* ASI-408 unified reference links + future CAD wireframe space */
+.cite-link{color:#0876a8;font-weight:700;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px}
+.reference-entry:target{background:#e9f7ff;outline:1px solid #9ed4ed;border-radius:6px;padding:8px 7px 8px 22px;scroll-margin-top:100px}
+.wireframe-placeholder{margin:36px 0;padding:26px;border:1px solid #cbdbe9;border-radius:14px;background:linear-gradient(135deg,#f8fcff,#eaf4fa)}
+.wireframe-placeholder h3{font-size:22px;color:#173e60;margin:9px 0 10px}
+.wireframe-placeholder p{font-size:13px;line-height:1.8;color:#435f75}
+.wireframe-kicker{font-size:10px;letter-spacing:.12em;font-weight:800;color:#2779a2}
+.wireframe-empty{min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;margin:20px 0;background:linear-gradient(90deg,transparent 49.6%,#dbe8f2 49.8%,#dbe8f2 50.2%,transparent 50.4%),linear-gradient(0deg,transparent 49.6%,#dbe8f2 49.8%,#dbe8f2 50.2%,transparent 50.4%),#fff;background-size:64px 64px;border:2px dashed #9fbcd0;border-radius:11px;text-align:center;color:#61839d}
+.wireframe-empty-label{font-size:16px;letter-spacing:.08em;font-weight:800}
+.wireframe-empty-tip{font-size:12px;padding:0 20px}
+.wireframe-instructions{padding:11px 14px;border-left:3px solid #3da1ce;background:white}
+.wireframe-home-note{font-size:12px;color:#4c6a80;margin:13px 0}
+#citation-crosswalk .doc-table{min-width:540px}
+@media(max-width:600px){.wireframe-placeholder{padding:17px}.wireframe-empty{min-height:225px}}

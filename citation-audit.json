@@ -1,0 +1,21 @@
+{
+  "report_basis": "CDE4301_Interim_Report_Revised.docx",
+  "project_code": "ASI-408",
+  "references": 23,
+  "slide_reference_crosswalk": {
+    "1": 7,
+    "2": 9,
+    "3": 20,
+    "4": 21,
+    "5": 22,
+    "6": 23
+  },
+  "wireframe_status": "placeholder only",
+  "interactive_model_file": "ASI-408-heavy-robot.glb",
+  "notes": [
+    "original report references 1-19 retained",
+    "4 slide-specific Bilibili video references appended",
+    "two supplementary references retained to preserve original numbering",
+    "direct source links restored where known"
+  ]
+}

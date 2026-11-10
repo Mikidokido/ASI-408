@@ -22,3 +22,16 @@ Five video links cited in the original interim presentation are embedded in the 
 - `styles.css`, `site.js`: responsive styling and lazy-load video playback
 
 Enable GitHub Pages using **Settings → Pages → Deploy from a branch → main / (root)**. No build tools are required. Videos require an internet connection and are subject to Bilibili's availability and embedding restrictions.
+
+
+## Citation audit (2026-11-10)
+
+- Numeric citations on the report webpages link to one unified bibliography under `interim-report/appendices.html`.
+- Original Word-report references [1]–[19] are retained to prevent ambiguous renumbering.
+- Four slide-only demonstration videos are added as [20]–[23]; see the slide-to-report crosswalk.
+- Original source URLs and scholarly DOIs have been restored where available. The 2026 rules Q&A is explicitly flagged as **not** an authoritative ruling for the 2027 competition.
+- Source link or DOI presence does not itself verify that the referenced design has been experimentally validated.
+
+## Adding the robot wireframe
+
+The `interim-report/progress.html#robot-wireframe` section is a **placeholder**, not a rendered CAD model. Provide a lightweight complete robot assembly named `ASI-408-heavy-robot.glb` (glTF binary, preferably under 20 MB). This format supports a 3D viewer with optional wireframe mode. Alternative source formats are STEP (`.step` or `.stp`) or STL (`.stl`); they need conversion to browser-friendly glTF/GLB. For native SolidWorks CAD, upload `.SLDASM` with all referenced `.SLDPRT` components. Do not publish restricted team CAD without permission.
