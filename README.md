@@ -40,11 +40,12 @@ The `interim-report/progress.html#robot-wireframe` section is a **placeholder**,
 
 The homepage hero **automatically switches to an interactive 3D model** when you add `assets/models/ASI-408-heavy-robot.glb`. Until then, it intentionally shows your existing actual CAD image instead of an invented model.
 
-The student profile **automatically switches to your portrait** when you add `assets/profile/cheng-yi.jpg`. Until then, a labelled placeholder is displayed. Name, department, year, supervisor, project code and team are already shown.
+The homepage profile is intentionally minimal: Cheng Yi, Year 4, Mechanical Engineering, and the actual portrait extracted from presentation slide 2 at `assets/profile/cheng-yi.jpg`.
 
 ## Hero projectile analysis (Appendix D)
 
-`assets/data/RMUL_2026_Hero_Performance_Summary.xlsx` contains the verified aggregate figures and two kinds of editable Excel charts. **It is not the original 435-row workbook.** Upload `联盟赛分析.xlsx` to have the full capacity-coverage curve recreated and to preserve the original detailed dataset.
+`assets/data/RMUL_2026_Hero_Performance_Full_435_Charts.xlsx` is the **original uploaded workbook** (including all ten original worksheets), with 3 added sheets: `Hero Records` (the complete 435 match-level observations and original cell references), `Chart Data` (formula-based summary tables), and `Hero Dashboard` (four native Excel charts). The original 37 teams and all nine regions are retained. The Appendix D download link points to this full-data version.
+
 
 ## Editing locally
 
