@@ -21,4 +21,4 @@ Five video links cited in the original interim presentation are embedded in the 
 - `assets/video-posters/`: five still frames from the supplied presentation PDF
 - `styles.css`, `site.js`: responsive styling and lazy-load video playback
 
-Enable GitHub Pages using **Settings → Pages → Deploy from a branch → main / (root)**. No build tools are required. Videos require an internet connection and are subject to Bilibili's availability and embedding restrictions.
+Enable GitHub Pages using **Settings → Pages → Source: GitHub Actions** so `.github/workflows/pages.yml` can publish from `main`. No build tools are required. Videos require an internet connection and are subject to Bilibili's availability and embedding restrictions.
