@@ -164,3 +164,8 @@
 .design-requirements-list{margin:0 0 20px;padding-left:24px;color:#384b5c;font-size:14px;line-height:1.9}
 .design-requirements-list li{margin:0 0 12px}
 .design-requirements-list strong{color:#183b57;font-weight:750}
+
+/* Full-width chassis architecture comparison; preserve the original slide image proportions. */
+.chassis-architecture-figure{background:#000;border-color:#111;padding:0}
+.chassis-architecture-figure .figure-link{display:block;width:100%}
+.chassis-architecture-figure img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;border-radius:0}
