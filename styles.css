@@ -128,8 +128,8 @@
 .milestones-footnote{font-size:12px;color:#6a7e90;margin:26px 0 0}
 @media(max-width:980px){.milestones-lane{grid-template-columns:1fr;padding:5px 0 5px 22px;margin-top:20px}.milestones-lane:before{width:3px;height:auto;left:8px;top:3px;bottom:16px;right:auto}.milestone{padding:0 0 20px 18px;min-height:98px}.milestone-date{min-height:0;height:auto;padding:0 0 6px;font-size:15px}.milestone-dot{position:absolute;left:-20px;top:5px;margin:0}.milestone-star{position:absolute;left:-23px;top:2px;margin:0}.milestone h3{font-size:20px;margin-bottom:7px}.milestone-feature{min-height:58px}.milestone ul{font-size:13px}}
 /* Small, user-supplied MP4 replaces the previous full-size external match embed. */
-.short-clip-section{max-width:700px}
-.short-clip-slot{width:min(100%,520px);aspect-ratio:16/9;position:relative;background:#10263b;border:1px solid #b3cfe0;border-radius:11px;overflow:hidden}
+.short-clip-section{max-width:none;width:100%}
+.short-clip-slot{width:100%;max-width:none;aspect-ratio:16/9;position:relative;background:#10263b;border:1px solid #b3cfe0;border-radius:11px;overflow:hidden}
 .short-clip-slot img{display:block;width:100%;height:100%;object-fit:cover;filter:brightness(.55)}
 .short-clip-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:22px;gap:8px;color:#fff}
 .short-clip-overlay strong{font-size:17px}.short-clip-overlay small{font-size:12px;color:#ddedf8}
@@ -154,3 +154,8 @@
 .short-clip-fallback{display:grid;place-items:center;position:absolute;inset:0;background:linear-gradient(#0a1e30aa,#0a1e30aa),url("assets/video-posters/BV1m5AgzeERu.webp") center/cover no-repeat;text-decoration:none}
 .short-clip-fallback[hidden]{display:none}
 .short-clip-fallback .short-clip-icon{color:#fff}
+
+/* Workstation figure: use the diagram-and-legend crop rather than the full source page.
+   This shows the same contents as the supplied tight crop, without the source-page caption. */
+.workstation-crop-figure .workstation-crop-link{position:relative;display:block;width:100%;aspect-ratio:794/482;overflow:hidden;background:#f7f9fa;border-radius:5px}
+.workstation-crop-figure .workstation-crop-link img{position:absolute;top:0;left:3.8%;display:block;width:78.6%;max-width:none;max-height:none;height:auto;object-fit:initial;border-radius:0;margin:0}
