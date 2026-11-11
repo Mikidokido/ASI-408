@@ -146,3 +146,11 @@
 .site-header .brand{gap:9px}
 .intro-concept-figure .figure-label{font-size:12.5px;color:#305c77;font-weight:800;margin-right:3px}
 @media(max-width:760px){.site-header .brand-logo{width:47px;height:47px}.site-header .brand{gap:6px}}
+
+/* Competition match footage: native player; image-only fallback until the MP4 is published. */
+.short-clip-slot video{display:block;width:100%;height:100%;object-fit:contain;background:#10263b}
+.short-clip-slot video[hidden]{display:none}
+.short-clip-citation{font-size:.55em;vertical-align:super;margin-left:7px;font-weight:600}
+.short-clip-fallback{display:grid;place-items:center;position:absolute;inset:0;background:linear-gradient(#0a1e30aa,#0a1e30aa),url("assets/video-posters/BV1m5AgzeERu.webp") center/cover no-repeat;text-decoration:none}
+.short-clip-fallback[hidden]{display:none}
+.short-clip-fallback .short-clip-icon{color:#fff}
