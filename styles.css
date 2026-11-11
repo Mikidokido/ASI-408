@@ -189,6 +189,7 @@
 .stiffness-study-equations{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;flex:1;min-height:129px;margin:2px 0 18px}
 .stiffness-study-eq{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:7px;text-align:center;font-size:15px;color:#193f5c;line-height:1.5}
 .stiffness-study-eq sub{font-size:10px}
+.stiffness-study-symbol{white-space:nowrap;display:inline-block}
 .stiffness-study-eq sup{font-size:.7em}
 .stiffness-study-equals{font-size:18px}
 .stiffness-study-fraction{display:inline-flex;flex-direction:column;align-items:center;text-align:center;font-size:14px;line-height:1.5;max-width:100%}
