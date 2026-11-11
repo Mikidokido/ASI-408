@@ -207,3 +207,32 @@
 .stiffness-study-caveat{font-size:11.5px;line-height:1.7;color:#62798a;margin:11px 2px 0}
 @media(max-width:780px){.section-stiffness-study{padding:16px}.stiffness-study-grid{grid-template-columns:1fr}.stiffness-study-equations{min-height:105px}.stiffness-study-takeaway{flex-wrap:wrap}.stiffness-study-multiplier{font-size:24px}}
 @media(max-width:430px){.stiffness-study-card{padding:12px}.stiffness-study-eq{font-size:13px}.stiffness-study-fraction{font-size:12px}.stiffness-study-heading h5{font-size:18px}}
+
+/* Landing force case study — companion to the tube-vs-plate panel. */
+.landing-force-study{margin:22px 0 24px;padding:23px;background:#f0f7fc;border:1px solid #d4e5ef;border-radius:13px;color:#24445f;box-shadow:0 4px 17px rgba(16,49,74,.035)}
+.landing-force-grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:14px}
+.landing-force-card{min-width:0;padding:18px;background:#fff;border:1px solid #dce7ef;border-radius:11px}
+.landing-force-card h6{font-size:14px;color:#193e5d;margin:0 0 15px;padding-bottom:11px;border-bottom:1px solid #e6eef4}
+.landing-force-parameter{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:12px 0;border-bottom:1px solid #eef3f6}
+.landing-force-parameter:last-child{border-bottom:0}
+.landing-force-parameter span{font-size:12px;line-height:1.5;color:#557185}
+.landing-force-parameter strong{font-size:14px;color:#1c4d6e;white-space:nowrap}
+.landing-force-derivation{display:flex;flex-direction:column}
+.landing-force-equations{display:flex;flex:1;flex-direction:column;justify-content:center;align-items:center;gap:15px;margin:5px 0 19px;font-size:18px;line-height:1.5;color:#1c4965;text-align:center}
+.landing-force-equations>div{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:5px}
+.landing-force-equations sub{font-size:10px}
+.landing-force-bracket{display:inline-flex;align-items:center;gap:5px}
+.landing-force-fraction{display:inline-flex;flex-direction:column;align-items:stretch;line-height:1.3;font-size:.92em}
+.landing-force-fraction>span{text-align:center;padding:0 5px}
+.landing-force-fraction>span:first-child{border-bottom:1.5px solid #1c4965}
+.landing-force-result{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;background:#ecf5fb;border-radius:8px;padding:12px 14px}
+.landing-force-result span{font-size:11px;color:#56738a}
+.landing-force-result strong{font-size:19px;color:#175e88;white-space:nowrap}
+.landing-force-target{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin:15px 0 0;padding:15px 17px;border:1px solid #c7e2f0;border-radius:9px;background:#dceef8}
+.landing-force-target>div{display:flex;flex-direction:column;gap:5px}
+.landing-force-target span{font-size:11.5px;color:#4d6d82}
+.landing-force-target div strong{font-size:13px;color:#204761}
+.landing-force-target-number{font-size:25px;color:#13749c;white-space:nowrap}
+.landing-force-study .stiffness-study-caveat{margin-top:12px}
+@media(max-width:780px){.landing-force-study{padding:16px}.landing-force-grid{grid-template-columns:1fr}.landing-force-equations{font-size:17px;gap:12px}.landing-force-parameter{padding:10px 0}}
+@media(max-width:430px){.landing-force-card{padding:12px}.landing-force-equations{font-size:15px}.landing-force-target-number{font-size:22px}}
