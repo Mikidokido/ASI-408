@@ -159,3 +159,8 @@
 .doc-table tr.heavy-robot-power-highlight td{background:#dceffa;color:#123b59;font-weight:800}
 .doc-table tr.heavy-robot-power-highlight td strong{color:inherit}
 .doc-table tr.heavy-robot-power-highlight td:first-child{border-left:4px solid #2383b1;padding-left:7px}
+
+/* Design Requirements: match report body typography while retaining two clear deliverable bullets. */
+.design-requirements-list{margin:0 0 20px;padding-left:24px;color:#384b5c;font-size:14px;line-height:1.9}
+.design-requirements-list li{margin:0 0 12px}
+.design-requirements-list strong{color:#183b57;font-weight:750}
