@@ -90,4 +90,52 @@
       }
     }).catch(() => {});
   }
+
+  // Assemble and preview the full 70-slide PDF from hosted binary parts.
+  const presentationButtons = Array.from(document.querySelectorAll('[data-presentation-action]'));
+  let presentationURL = null;
+  let presentationLoad = null;
+  async function getPresentation() {
+    if (presentationURL) return presentationURL;
+    if (!presentationLoad) {
+      presentationLoad = (async () => {
+        const buffers = [];
+        for (let i = 1; i <= 8; i++) {
+          const id = String(i).padStart(2, '0');
+          const response = await fetch('../assets/presentation/ASI-408_Interim_Presentation.pdf.part' + id);
+          if (!response.ok) throw new Error('PDF part ' + id + ' unavailable');
+          buffers.push(new Uint8Array(await response.arrayBuffer()));
+        }
+        const size = buffers.reduce((total, p) => total + p.length, 0);
+        const pdf = new Uint8Array(size);
+        let offset = 0;
+        for (const p of buffers) {pdf.set(p, offset); offset += p.length;}
+        if (pdf[0] !== 37 || pdf[1] !== 80 || pdf[2] !== 68 || pdf[3] !== 70) throw new Error('Invalid PDF data');
+        presentationURL = URL.createObjectURL(new Blob([pdf], {type:'application/pdf'}));
+        return presentationURL;
+      })().catch(error => {presentationLoad = null; throw error;});
+    }
+    return presentationLoad;
+  }
+  presentationButtons.forEach(button => button.addEventListener('click', async () => {
+    const message = document.getElementById('presentation-status');
+    presentationButtons.forEach(b => {b.disabled = true;});
+    if (message) message.textContent = 'Preparing all 70 slides...';
+    try {
+      const url = await getPresentation();
+      if (button.dataset.presentationAction === 'view') {
+        const preview = document.getElementById('presentation-preview');
+        if (preview) {preview.src = url + '#toolbar=1'; preview.hidden = false; preview.scrollIntoView({behavior:'smooth',block:'start'});}
+        if (message) message.textContent = 'The full presentation is ready to view.';
+      } else {
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'ASI-408_Interim_Presentation.pdf';
+        document.body.appendChild(link); link.click(); link.remove();
+        if (message) message.textContent = 'PDF download started.';
+      }
+    } catch(error) {
+      if (message) message.textContent = 'Unable to load the PDF: ' + error.message;
+    } finally {presentationButtons.forEach(b => {b.disabled = false;});}
+  }));
 })();
