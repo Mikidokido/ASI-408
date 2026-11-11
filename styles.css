@@ -155,7 +155,3 @@
 .short-clip-fallback[hidden]{display:none}
 .short-clip-fallback .short-clip-icon{color:#fff}
 
-/* Workstation figure: use the diagram-and-legend crop rather than the full source page.
-   This shows the same contents as the supplied tight crop, without the source-page caption. */
-.workstation-crop-figure .workstation-crop-link{position:relative;display:block;width:100%;aspect-ratio:794/482;overflow:hidden;background:#f7f9fa;border-radius:5px}
-.workstation-crop-figure .workstation-crop-link img{position:absolute;top:0;left:3.8%;display:block;width:78.6%;max-width:none;max-height:none;height:auto;object-fit:initial;border-radius:0;margin:0}
