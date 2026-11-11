@@ -155,3 +155,7 @@
 .short-clip-fallback[hidden]{display:none}
 .short-clip-fallback .short-clip-icon{color:#fff}
 
+/* Emphasise the Heavy robot’s limited chassis power in Table 4. */
+.doc-table tr.heavy-robot-power-highlight td{background:#dceffa;color:#123b59;font-weight:800}
+.doc-table tr.heavy-robot-power-highlight td strong{color:inherit}
+.doc-table tr.heavy-robot-power-highlight td:first-child{border-left:4px solid #2383b1;padding-left:7px}
