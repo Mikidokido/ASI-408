@@ -271,3 +271,6 @@
  .grabbing-concepts-table td,.grabbing-concepts-table th{padding:11px 10px}
  .grabbing-concepts-table .grabbing-concept-visual img{height:93px}
 }
+
+/* Highlight one evidence-backed passage per design requirement in the interim report. */
+.req-highlight{font-weight:800;color:#c9473a;background:none;text-decoration:none;border:0;box-shadow:none}
