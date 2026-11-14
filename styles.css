@@ -312,9 +312,3 @@
 .grabbing-concepts-table .grabbing-implications li{margin:0 0 7px;padding:0}
 .grabbing-concepts-table .grabbing-implications li:last-child{margin-bottom:0}
 .grabbing-concepts-table .grabbing-implications li::marker{color:#378bb0}
-
-/* Interactive CAD assembly on the Semester 1 progress page. */
-.semester1-model-frame{margin:20px 0 12px}
-.semester1-model-frame model-viewer{display:block;width:100%;height:clamp(300px,46vw,520px);background:radial-gradient(ellipse at 54% 38%,#ecf9fc 0%,#c6d8e5 100%);border:1px solid #b9d2e4;border-radius:11px;--poster-color:#f1f7fb}
-.semester1-model-caption{padding:9px 3px 0;font-size:12px;line-height:1.6;color:#58738b}
-@media(max-width:600px){.semester1-model-frame model-viewer{height:320px}}
