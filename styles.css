@@ -306,3 +306,9 @@
 @media(max-width:1200px){.requirements-spec-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.requirements-target-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.requirements-target-card{min-height:175px}}
 @media(max-width:760px){.requirements-dashboard-content{padding:20px 15px}.requirements-dashboard-header{min-height:78px;padding:18px}.requirements-radar{right:-28px}.requirements-target-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.requirements-target-card{padding:12px 10px}.requirements-target-card h6{font-size:10.5px}}
 @media(max-width:530px){.requirements-target-grid{grid-template-columns:1fr}.requirements-target-card{min-height:0}.requirements-spec-grid{gap:8px}.requirements-spec-card{padding:12px 10px;min-height:75px}.requirements-spec-card strong{font-size:13px}.requirements-target-body p,.requirements-rationale p{font-size:12px}}
+
+/* Readable design-implications lists in the grabbing-mechanism archetype comparison. */
+.grabbing-concepts-table ul.grabbing-implications{margin:0;padding-left:15px;list-style-type:disc;line-height:1.55}
+.grabbing-concepts-table .grabbing-implications li{margin:0 0 7px;padding:0}
+.grabbing-concepts-table .grabbing-implications li:last-child{margin-bottom:0}
+.grabbing-concepts-table .grabbing-implications li::marker{color:#378bb0}
